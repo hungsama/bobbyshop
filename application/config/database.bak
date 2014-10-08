@@ -1,0 +1,37 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$active_group = 'mongo';
+$active_record = TRUE;
+
+//$db['default']['hostname'] = 'sopcast-mdb';
+/*$db['default']['username'] = 'sopcastmobi';
+$db['default']['password'] = 'daylatrangsopcast';
+$db['default']['database'] = 'sopcast_mobi';
+$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbprefix'] = 'store_';
+$db['default']['pconnect'] = FALSE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
+*/
+// Mongo appota
+$db['mongo']['replicaSet']         = 'sopcast';
+$db['mongo']['readPreference']     = '';
+$db['mongo']['readPreferenceTags'] = '';
+$db['mongo']['hostname']           = 'sopcast-mongo1:27017,sopcast-mongo2:27017';
+$db['mongo']['username']           = '';
+$db['mongo']['password']           = '';
+$db['mongo']['database']           = 'push';
+$db['mongo']['dbdriver']           = 'mongo';
+#$db['mongo']['port']               = '27017';
+$db['mongo']['write_concern']      = 1;
+$db['mongo']['db_debug']           = TRUE;
+$db['mongo']['autoinit']           = TRUE;
+$db['mongo']['connect']            = TRUE;
+$db['mongo']['conn_timeout']       = 2000;
+$db['mongo']['ai_collection']      = 'mongo_autoincrement';
+?>
