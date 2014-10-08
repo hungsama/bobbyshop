@@ -37,17 +37,5 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
-/*
-|--------------------------------------------------------------------------
-| key open api push
-|--------------------------------------------------------------------------
-|
-| Authenticate push
-|
-*/
-define('PRIVATE_KEY_LOGIN_PUSH', 'login.appota.push.default');
-define('PRIVATE_KEY_APP_PUSH', 'app.appota.push.default');
-define('PRIVATE_KEY_CLIENT_PUSH', 'app.appota.push.default');
-
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
